@@ -176,7 +176,7 @@ namespace NES
 
             var handler = (EventHandler<ConsoleKeyInfo>)PS2Keyboard_OnKeyChangedHandler;
 
-            Program.BindOnKeyChangedHandler(handler);
+            Program.BindOnKeyChangedHandler(handler.GetHandle());
         }
 
         public void PS2Keyboard_OnKeyChangedHandler(object sender,ConsoleKeyInfo key)
